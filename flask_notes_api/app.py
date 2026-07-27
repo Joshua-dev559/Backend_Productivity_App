@@ -12,6 +12,7 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 bcrypt = Bcrypt(app)
 jwt = JWTManager(app)
+api = Api(app)
 
 from models import User, Note
 from auth_resources import Signup, Login, Logout, Me
