@@ -1,11 +1,11 @@
-from app import db, bycrypt
+from app import db, bcrypt
 from sqlalchemy.orm import validates
-import requests
+import re
 
-class User(db.model):
+class User(db.Model):
     __tablename__ = 'users'
-    id = db.column(db.Integer, primary_key=True)
-    username = db.Column(db.string(80), unique=True, nullable=False)
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(80), unique=True, nullable=False)
     password_harsh = db.Column(db.String(125), nullable=False)
     
     notes = db.relationship('Note', backref='author', lazy=True, cascade='all, delete-orphan')
