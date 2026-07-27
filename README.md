@@ -1,6 +1,4 @@
-# Backend_Productivity_App
-
-## Project Title
+# Project Title
 Full Auth Flask Backend - Productivity App
 
 ## Project Description
@@ -11,9 +9,8 @@ This project implements a secure Flask RESTful API backend for a productivity ap
 1.  **Clone the repository (or download the ZIP):**
     ```bash
     git clone <your-repo-url>
-    cd productivity_backend
+    cd flask_notes_api
     ```
-    *(Note: Replace `<your-repo-url>` with the actual URL if you're using Git.)*
 
 2.  **Install dependencies using Pipenv:**
     If you don't have Pipenv installed, install it first:
